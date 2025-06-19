@@ -1,0 +1,142 @@
+:root {
+    --main-bg: #f5faff;
+    --accent: #1e90ff;
+    --accent-dark: #176bb3;
+    --text: #222;
+    --header-bg: #fff;
+    --border-radius: 10px;
+    --card-bg: #fff;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: var(--main-bg);
+    color: var(--text);
+}
+header {
+    background: var(--header-bg);
+    box-shadow: var(--shadow);
+    padding: 0.5em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 48px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: var(--accent-dark);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+nav a.active,
+nav a:hover,
+nav a:focus {
+    color: var(--accent);
+    outline: none;
+}
+.section {
+    max-width: 900px;
+    margin: 2em auto;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2em;
+}
+.banner {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1em;
+}
+.trainee-grid {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.trainee-card {
+    background: #f3f8ff;
+    border-radius: var(--border-radius);
+    flex: 1 1 250px;
+    margin: 0.5em;
+    padding: 1em;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+.trainee-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+.job-list {
+    line-height: 2;
+    padding-left: 0.5em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+form label {
+    font-weight: 600;
+}
+form input, form textarea, form button {
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #c8d6e5;
+}
+form button[type="button"] {
+    background: #eee;
+    border: none;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+form button[type="submit"] {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+form button[type="submit"]:hover, form button[type="submit"]:focus {
+    background: var(--accent-dark);
+}
+#formMessage {
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+.courses {
+    list-style: disc;
+    margin-left: 1.5em;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #e8f1fb;
+    margin-top: 2em;
+    font-size: 0.95em;
+    color: #555;
+}
+@media (max-width: 900px) {
+    .section { padding: 1em; }
+    .trainee-grid { flex-direction: column; }
+}
+@media (max-width: 500px) {
+    header { flex-direction: column; align-items: flex-start; padding: 1em; }
+    nav ul { gap: 0.8em; }
+    .banner { max-height: 150px; }
+}
