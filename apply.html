@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hot Beans Web – Apply Now</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>Hot Beans Web – Apply Now</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 <header>
-    <img src="assets/logo.svg" alt="Hot Beans Web Logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">Company</a></li>
-            <li><a href="trainees.html">Trainees</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html" class="active">Apply</a></li>
-            <li><a href="courses.html">Courses</a></li>
-        </ul>
-    </nav>
+  <img src="assets/logo.svg" alt="Hot Beans Web Logo" class="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html">Company</a></li>
+      <li><a href="trainees.html">Trainees</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="apply.html" class="active">Apply</a></li>
+      <li><a href="courses.html">Courses</a></li>
+    </ul>
+  </nav>
 </header>
 <main>
-    <section class="section" id="apply">
-        <h1>Online Application Form</h1>
-        <form id="applicationForm" aria-label="Job application form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required aria-required="true">
+  <section class="section fade-in" id="apply">
+    <h1 class="main-heading">Application Form</h1>
+    <form id="applicationForm" aria-label="Job application form" class="pop-in big-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required aria-required="true">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="name@example.com" required aria-required="true">
 
-            <label for="qual">Relevant Qualification/Course:</label>
-            <input type="text" id="qual" name="qual" required aria-required="true">
+      <label for="qual">Qualification/Course:</label>
+      <input type="text" id="qual" name="qual" placeholder="e.g. BSc Computer Science or Bootcamp" required aria-required="true">
 
-            <label for="about">About You:<br>
-                <button type="button" id="voiceBtn" aria-label="Start voice input" title="Voice input"><span>🎤</span> Speak</button>
-            </label>
-            <textarea id="about" name="about" rows="4" required aria-required="true"></textarea>
+      <label for="about">About You: <button type="button" id="voiceBtn" aria-label="Start voice input" title="Voice input"><span>🎤</span> Speak</button></label>
+      <textarea id="about" name="about" rows="5" placeholder="Tell us why you want to join Hot Beans Web, your passion, and your experience." required aria-required="true"></textarea>
 
-            <label for="cv">Upload CV:</label>
-            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required aria-required="true">
+      <label for="cv">Upload CV:</label>
+      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required aria-required="true">
 
-            <button type="submit">Submit Application</button>
-            <div id="formMessage" aria-live="polite"></div>
-        </form>
-    </section>
+      <button type="submit" class="btn btn-animated btn-large">Submit Application</button>
+      <div id="formMessage" aria-live="polite"></div>
+    </form>
+    <p class="form-note fade-in">We are committed to diversity and accessibility. If you require adjustments, let us know in your application.</p>
+  </section>
 </main>
 <footer>
-    <p>&copy; 2025 Hot Beans Web. All rights reserved.</p>
+  <p>&copy; 2025 Hot Beans Web. All rights reserved.</p>
 </footer>
 </body>
 </html>
