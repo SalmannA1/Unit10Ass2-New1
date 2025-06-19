@@ -1,0 +1,9 @@
+<svg width="220" height="70" viewBox="0 0 220 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="70" rx="18" fill="#1560BD"/>
+  <text x="20" y="48" font-family="Segoe UI, Arial, sans-serif" font-weight="bold" font-size="38" fill="#fff">Hot Beans</text>
+  <text x="20" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#4da3ff" font-weight="bold">Web Careers</text>
+  <ellipse cx="186" cy="35" rx="26" ry="26" fill="#4da3ff" opacity="0.6"/>
+  <ellipse cx="186" cy="35" rx="16" ry="16" fill="#fff"/>
+  <rect x="172" y="25" width="28" height="8" rx="4" fill="#1560BD"/>
+  <ellipse cx="186" cy="35" rx="7" ry="7" fill="#1560BD"/>
+</svg>
